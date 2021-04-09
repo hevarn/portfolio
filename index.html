@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- ----------- -->
+      <!-- FEUILLE CSS -->
+      <!-- ----------- -->
+
+      <link rel="stylesheet" href="./CSS/style.css">
+      <link rel="stylesheet" href="./CSS/scroll.css">
+      <link rel="stylesheet" href="./CSS/bounce.css">
+      <!-- <link rel="stylesheet" href="../CSS/teste.css"> -->
+
+      <!-- ---------- -->
+      <!-- SOURCES JS -->
+      <!-- ---------- -->
+      <script src="./SCRIPT/hover_cursor.js"></script>
+
+      <!-- soucre jquery pour le scroll + fichier lié  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- TEST -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+       <!-- ne pas oublier -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
+      <!-- <script src="../SCRIPT/scroll.js"></script> -->
+      <script src="./SCRIPT/mini_bar_nav.js"></script>
+      <script src="./SCRIPT/scroll.js"></script>
+      <script src="./SCRIPT/script_html.js"></script>
+      <!-- pour empécher le navigateur de rafraichir la page à la derneir ancre utiliser  -->
+      <script>window.onbeforeunload = function () { window.scrollTo(0, 0); }</script>
+
+      <!-- --------- -->
+      <!-- LES FONTS -->
+      <!-- --------- -->
+
+      <link rel="preconnect" href="https://fonts.gstatic.com"> 
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Megrim&family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com"> 
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+      <!-- --------- -->
+      <!-- LES ICONS -->
+      <!-- --------- -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+      <title>portfolio</title>
+  </head>
+
+
+  <body>
+
+    <div class="pointer1"></div>
+    <div class="pointer2"></div>
+      <!-- HEADER -->   <!-- TITRE -->
+      <!-- BARRE DE MENU -->
+    <header id="banner" >
+      <div class="container_de_la_nav" id="header">
+        <nav id="bannertext" class="mouvement" data-tilt data-tilt-max="18" data-tilt-speed="200"data-tilt-perspective="3000">
+          <div class="container_nav" >
+            <div class="titre_principale">
+                        <!--TITRE DE LA NAV--> 
+              <h1>Monsieur.<span class="lettre_m">M</span></h1>
+            </div>
+            <ul>
+              <li><a href="#ma_bio">MA BIO</a></li>
+              <li><a href="#photo">PHOTOS</a></li>
+              <li><a href="#cv">CV+Link</a></li>
+              <li><a href="#footer">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+      <!-- --------- -->
+      <!---  MAIN   --->
+      <!--BOULLE DECO--> 
+      <!-- --------- -->
+
+    <main id="content" >
+      <!-- <div class="cercle1"></div>
+      <div class="cercle2"></div>
+      <div class="cercle3"></div>
+      <div class="cercle4"></div>
+      <div class="cercle5"></div>
+      <div class="cercle6"></div> -->
+      
+      
+      <div id="ma_bio"class="container_de_ma_bio">
+
+        <!-- -------------------------- -->
+        <!--  MINI BAR DE NAV LATERALE  -->
+        <!-- -------------------------- -->
+<!-- <div class="navbar_container"> -->
+            <!-- <div class="logo">
+              <p>MONSIEUR <span class="lettre_m_delanav" >M</span></p>
+            </div> -->
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="#header">
+                <img src="./IMG/icon/top.png" alt="logo top">
+              </a>
+            </li>
+            <li>
+              <a href="#ma_bio"><img src="./IMG/icon/bio.png" alt="logo bio">
+              </a>
+            </li>
+            <li>
+              <a href="#photo"><img src="./IMG/icon/gallery.png" alt="logo gallery">
+              </a>
+            </li>
+            <li>
+              <a href="#cv"><img src="./IMG/icon/file.png" alt="logo files"></a>
+            </li>
+            <li>
+              <a href="#footer"><img src="./IMG/icon/contact.png" alt="logo contact"></a>
+            </li>
+            <li>
+              <a href="#footer"><img src="./IMG/icon/bottom.png" alt="logo bottom"></a>
+            </li>
+        </div>
+        <!-- -------------- -->
+         <!-- BOULLE DECO--> 
+        <div class="container_boulle1">
+          <div class="boulle_bio1"></div>
+          <div class="boulle_bio2"></div>
+        </div>
+        <!-- -------------- -->
+        <div class="bando_ma_bio">
+          <span class="bio">MA BIO</span>
+        </div>
+        <!--TEXTE DE MA BIO-->
+        <div class="texte_bio">
+            <p>Apres 7 ans passés dans le métier de la restauration,
+            J’ai décidé de faire une reconversion professionnelle pour être développeur full-stack.</p>
+            <p>Les premiers mois, je me suis autoformé en HTML/CSS et languages de programmations, PYTHON/JS.</p>
+            <p>En février 2021 j’ai intégré la formation « e-code » au campus du lac en qualité de développeur web et web mobile  full-stack.</p>
+            <p>Cela m’a permis d’approfondir mes connaissances.</p>
+             <p>Durant cette période j’ai appris de nouveaux langage.<p>
+            <p>Au travers de  mes 7 ans d’expérience dans le métier de cuisinier, j’ai acquis des qualités telles que la rigueur, le dépassement de soi, la discipline, ainsi que l’organisation.<p>
+            <p>C’est à la faveur de ces atouts que  j’ai pu gravir les échelons dans cette profession.<p>
+            <p>D’ores et déjà je recherche un stage non rémunéré « fin de formation » pour la période du 01/07/2021 au 15/09/2021.<p>
+            <p>Au cours de ce stage  je dois établir un projet avec un mentor qui par la suite sera présenté lors  de mon examen.<p>
+            <p>Après cette formation j’aimerais me spécialiser dans le back-end et ainsi me diriger vers la cyber-sécurité. <p>
+        </div>
+      </div>
+
+      <!-- ---------------- -->
+      <!-- PREMIER BLOCK  + -->
+      <!--TYPE CAROUSELLE   --> 
+      <!-- ---------------- -->
+      
+      <div id="photo"class="premier">
+        <div class="bando">
+          <span class="photo">PHOTOS </span>
+        </div>
+        <div class="premier_block">
+          <!--TYPE CAROUSELLE--> 
+          <div class="container_photo">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <!-- IMAGE DU CAROUSELLE--> 
+              <label class="card" for="item-1" id="song-1">
+                <img src="https://images.unsplash.com/photo-1601537696316-97ccda87e71e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80" alt="song1">
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song2">
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song3">
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- -------------- -->
+        <div class="container_boulle">
+          <div class="boulle_bio"></div>
+        </div>
+      </div>
+
+      <!-- -------------------- -->
+      <!-- DEUXIEME BLOCK + ------>
+      <!---- BOULLE DECO + -------> 
+      <!--  BLOCK TEXTE EN HTML -->
+
+
+      <div id="cv" class="deuxieme">
+         <!-- BOULLE DECO--> 
+        <div class="container_boulle2">
+          <div class="boulle_bio1"></div>  
+        </div>
+        <!-- AVATAR--> 
+        <div class="avatar">
+            <img src="./IMG/moi.png" alt="logo de moi ">
+        </div> 
+         <!--  BLOCK TEXTE EN HTML-->
+        <div class="block_texte"> 
+          <!--BANDO--> 
+         <span class="cv"> Curriculum Vitae + Link</span>
+          <div class="code-texte">
+            <p>&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;1...<span class="symbole">{</span></p>
+                <!-- MOI -->
+            <p>&nbsp;2...<span class="balise">name<span class="symbole">:</span><span class="contenue"> "Ehoarn MODERNI",</span></p>
+            <p>&nbsp;3....<span class="balise">job</span><span class="symbole">:</span><span class="contenue"> "junior Développeur Front-end, Back-end,</span></p>
+            <p>&nbsp;4&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;5...<span class="symbole">}</span>;</p>
+            <p>&nbsp;6&nbsp; &nbsp;&nbsp;</p>
+            <!--CONTACT -->
+            <p>&nbsp;7...<span class="balise">Contact</span><span class="symbole">:{</span></p>
+            <p>&nbsp;8.....<span class="balise2">email</span><span class="symbole">:</span> &nbsp; &nbsp;&nbsp;&nbsp;<span class="contenue">"nunzio.moderni@gmail.com"</span><span class="symbole">;</span></p>
+            <p>&nbsp;9.....<span class="balise2">location</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;<span class="contenue">"at home, Bordeaux, 33000"</span><span class="symbole">;</span></p>
+            <p>&nbsp;10....<span class="balise2">number</span><span class="symbole">:</span> &nbsp; &nbsp;&nbsp;<span class="contenue">"06.51.11.52.48"</span><span class="symbole">;</span></p>
+            <p>&nbsp;11&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;12..<span class="symbole">}</span></p>
+            <p>&nbsp;13&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;14&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;15..<span class="symbole">{</span></p>
+                <!-- EXPERIENCE -->
+            <p>&nbsp;16...<span class="balise">experience</span><span class="symbole">: {</span></p>
+            <p>&nbsp;17.....<span class="balise2">"avant septembre 2020"</span><span class="symbole">:</span> &nbsp;<span class="contenue">"cuisiner depuis 7ans"</span></p>
+            <p>&nbsp;17.....<span class="balise2">"septembre à decembre 2020"</span><span class="symbole">: {</span> </p>
+            <p>&nbsp;19................&nbsp;<span class="contenue">" auto-formation" <span class="crocher">[</span>"SITE/UDEMY"</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;20................&nbsp;<span class="contenue"> -------------> &nbsp;&nbsp;<span class="crocher">[</span>"HTML" / "CSS"</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;21................&nbsp;<span class="contenue"> -------------> &nbsp;&nbsp;<span class="crocher">[</span>"PYTHON"</span><span class="crocher">]</span><span class="symbole">;..}</span></p>
+            <p>&nbsp;22.....<span class="balise2">fevier 2021"</span><span class="symbole">: {</span></p>
+            <p>&nbsp;23................&nbsp;<span class="contenue">"interagration de la formation" <span class="crocher">[</span>"E.CODE"</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;24................&nbsp;<span class="contenue">"Developpeur FULL STACK"</span><span class="symbole">;</span></p>
+            <p>&nbsp;25................&nbsp;<span class="contenue">"centre de formation Bordeaux lac"</span><span class="symbole">;</span></p>
+            <p>&nbsp;26&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;27..<span class="symbole">}</span></p>
+            <p>&nbsp;28&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;29&nbsp; &nbsp;&nbsp;</p>
+            <!-- COMPETENCES -->
+            <p>&nbsp;30....<span class="balise">front skills</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"HTML" / "CSS" / "JS" / "jQUERY"</span><span class="crocher">]</span><span class="symbole"></span><span class="symbole">;</span> </p>
+            <!-- COMPETENCE -->
+            <p>&nbsp;31....<span class="balise">back skills</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"PHP" / "MYSQL"/ </span><span class="crocher">]</span><span class="symbole"></span><span class="symbole">;</span> </p>
+            <!-- COMPETENCES  -->
+            <p>&nbsp;32....<span class="balise">framework skills</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"BOOSTRAP"</span><span class="crocher">]</span><span class="symbole">;</span> </p>
+            <p>&nbsp;33....<span class="balise">cms skills</span><span class="symbole":></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"WORDPRESS"</span><span class="crocher">]</span><span class="symbole">;</span> </p>
+            <!-- DEVELOPPEMENT -->
+            <p>&nbsp;34....<span class="balise">developpement skills</span><span class="symbole">:</span> &nbsp; <span class="crocher">[</span><span class="contenue">"PYTHON" / "JS"</span><span class="crocher">]</span><span class="symbole">; </span></p>
+            <p>&nbsp;35&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;36..<span class="symbole">}</span></p>
+            <p>&nbsp;37&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;38&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;39..<span class="balise">realisation</span><span class="symbole">: {</span></p>
+            <p>&nbsp;40.....<span class="balise2">"mars 2021"</span><span class="symbole">:</span> &nbsp;<span class="contenue">"portfoglio"</span><span class="symbole">;{</span></p>
+            <!-- LIEN PORTFOGLIO -->
+            <p>&nbsp;41.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span >[www.@.com]</span></a></p>
+            <p>&nbsp;42.....<span class="balise2">"avril 2021"</span><span class="symbole">:</span> &nbsp;<span class="contenue">"hackathon"</span><span class="symbole">;{</span></p>
+                <!-- LIEN HACKATHON -->
+            <p>&nbsp;43.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">[www.@.com]</a></p>
+            <p>&nbsp;44&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;45..<span class="symbole">}</span></p>
+            <p>&nbsp;46&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;47&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;48...<span class="balise">link</span><span class="symbole">: {</span></p>
+            <p>&nbsp;49......<span class="contenue">"website"</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;<span class="symbole">"</span>
+                <!-- LIEN VERS MON SITE -->
+            <a href="#">www.@.com</a><span class="symbole">"</span> </p>
+            <p>&nbsp;49......<span class="contenue">"github"</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- LIEN VERS GIT -->  
+            <span class="symbole">"</span><a href="#">www.@.com</a><span class="symbole">"</span> </p>
+            <p>&nbsp;49......<span class="contenue">"linkedin"</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;<span class="symbole">"</span><!-- LIEN VERS LINKEDIN-->
+            <a href="#">www.@.com</a><span class="symbole">" </span></p>
+            <p>&nbsp;49......<span class="contenue">"instagram"</span><span class="symbole">:</span>&nbsp;&nbsp;<span class="symbole">"
+                <!-- LIEN VERS INSTAGRAM-->
+            </span><a href="#">www.@.com</a><span class="symbole"></span><span class="symbole">"</span> </p>
+            <p>&nbsp;50&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;51..<span class="symbole"></span>}</p>
+            <p>&nbsp;52&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;53&nbsp; &nbsp;&nbsp;</p>
+            <!-- LES HOBBY -->
+            <p>&nbsp;54...<span class="balise">hobby</span><span class="symbole">: {</span></p>
+            <p>&nbsp;55.....<span class="crocher">[</span><span class="contenue">PHOTO</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;56.....<span class="crocher">[</span><span class="contenue">CUISINE</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;55.....<span class="crocher">[</span><span class="contenue">VELO DE COURS</span><span class="crocher">]</span><span class="symbole">;</span></p>
+          </div>          
+        </div>
+        <!-- -------------- -->
+        <!-- BOULLE DECO--> 
+        <div class="container_boulle3">
+          <div class="boulle_bio2"></div>
+          <div class="boulle_bio4"></div>
+        </div>
+        <!--BANDO--> 
+        <span class="contact" id="section03">CONTACT </span>   
+      </div>
+
+      <!-- ---------- -->
+      <!-- --FOOTER-- -->
+      <!-- ---------- -->
+
+      <footer id="footer">
+        <div class="footer">
+          <div class="arrow animated bounce2"></div> 
+          <a class="arrow1 animated bounce1" herf="#ma-bio"></a> 
+          <div class="arrow2 animated bounce"></div> 
+          <!-- FOOTER CONTAINER -->
+          <div id="container_footer">
+            <div class="logo">
+                <img src="./IMG/moi.png" alt="logo de moi ">
+            </div>
+            <div class="mention_legale">
+              <p class="vertical0" class="droit">© Tous droits réservés - 2021</p>
+              <a class="vertical" href="#">Mentions Legales</a>
+            </div>
+            <div class="contacts">
+                <p class="vertical0">Contact</p> 
+                <p class="vertical">Ehoarn Moderni</p>
+                <a class="vertical1" href="#">nunzio.moderni@gmail.com</a>
+            </div>
+            <div class="lien">
+                <p class="vertical0">liens</p>
+                <a class="vertical" href="#">Github</a>
+                <a class="vertical1" href="#">Instagram</a>
+                <a class="vertical2" href="#">linkedin</a>
+            </div>
+          </div>
+        </div>
+      </footer> 
+      
+      <!-- ----------- -->
+      <!----- JS    ----->
+      <!-- LES SOURCES -->
+      <!-- ----------- -->
+     
+      
+      
+      
+     
+      <!-- LES SCRIPTS -->
+      <script type="text/javascript" src="./SCRIPT/vanilla-tilt.js"></script>
+      <!-- <script src="./SCRIPT/hover_cursor.js"></script> -->
+      <script>
+      if (typeof bodymovin == 'undefined') {
+          document.write(unescape("%3Cscript src='bodymovin-0ad83d672f.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+      </script>
+      <script>
+        function EasyPeasyParallax() {
+          scrollPos = $(this).scrollTop();
+          $('#banner').css({
+            'background-position' : '50% ' + (-scrollPos/4)+"px"
+          });
+          $('#bannertext').css({
+            'margin-top': (scrollPos/4)+"px",
+            'opacity': 1-(scrollPos/250)
+          });
+        }
+        $(document).ready(function(){
+          $(window).scroll(function() {
+            EasyPeasyParallax();
+          });
+        });
+      </script>
+      <!-- <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".mouvement"), {
+            glare: true,
+            "max-glare":1,
+        });
+      </script> -->
+      
+    </main>
+  </body>
+</html>
+

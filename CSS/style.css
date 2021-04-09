@@ -1,0 +1,822 @@
+
+/* ****************
+          _______
+         |.-----.|
+         ||x . x||
+         ||_.-._||
+         `--)-(--`
+         __[=== o]___
+        |:::::::::::|\
+jgs     `-=========-` */
+/* <!-- GENERAL --> 
+/* **************** */
+/*
+font 
+
+
+font-family: 'Press Start 2P', cursive;
+/* **************** */
+/* <!-- GENERAL --> 
+font 
+
+/* font-family: Fira Mono,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace; font-weight:400;*/
+/* font-family: 'Press Start 2P', cursive;
+font-family: 'Roboto', sans-serif; (pour le texte)
+font-family: 'Anton', sans-serif; (pour le M)
+font-family: 'Bebas Neue', cursive; (pour le titre)+(les liens)
+font-family: 'Megrim', cursive; (texte bio)
+
+
+ **************** */
+
+
+ @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+ /* **************** */ 
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+ } 
+body{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    /* height:720vh; */
+    border-radius:12px;
+    cursor: url(../IMG/pikachu\ -\ work.ani), auto ;
+} 
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- CURSOR STYLE -->        -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+/* .cercle1{
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:2px solid red;
+
+}
+.cercle2{
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:2px solid red;
+
+
+}
+.cercle3{
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:2px solid red;
+
+}
+.cercle4{
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:2px solid red;
+
+}
+.cercle5{
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:2px solid red;
+
+}
+.cercle6{
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:2px solid red;
+
+
+} */
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- HEADER -->        -*@*-   */
+/*-*@**    <!-- BARRE DE MENU -->    -*@*-  */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+
+ header{
+     position: relative;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     width: 100%;
+     height: 100vh;
+     
+ }
+ 
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- TITRE -->         -*@*-   */
+/*-*@**      <!-- LA NAV -->         -*@*-  */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+
+nav{
+    border-radius:10px;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    /* autre version */
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(138, 138, 138, 0.2);
+    border:2px solid rgba(255, 255, 255, .2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+    min-width: 40vw;
+   
+}
+nav .container_nav{
+    
+    display:flex;
+    flex-direction:column;
+}
+.titre_principale{
+    text-align:center;
+    width:100%;
+    padding:1vh 1vw;
+}
+.titre_principale h1{
+    font-family: 'Bebas Neue', cursive; 
+    font-size:16vh;
+    font-weight:400;
+    letter-spacing:.3vw;
+    
+}
+.lettre_m{
+    font-family: 'Anton', sans-serif;
+    font-size:18vh;
+    font-weight: 400;
+    background-color: rgb(183, 253, 21);
+    
+   
+}
+ul{
+    display:flex;
+    justify-content:space-evenly;
+    list-style:none;
+    
+}
+
+nav ul li a{ 
+    font-size:1em;
+    text-decoration:none;
+    transition: all .3s ease;
+    color: black;
+    font-family:'Bebas Neue', cursive;
+    font-size:3rem;
+    font-weight:400;
+
+}
+nav ul li a:hover{
+    color: rgb(183, 253, 21);
+}
+
+/* SCROLL EFFET PARALAX SCROLL.JS */
+#banner { 
+    background: url(https://images.unsplash.com/photo-1483357962636-e8cc552b1a08?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80) no-repeat fixed 10% 100%; 
+    background-size: cover; 
+    
+}
+
+#bannertext { 
+    position: fixed; 
+    top: 20%; 
+    left: 43%; 
+    border: 2px solid #fff; 
+    margin-left: -12em; 
+    
+}
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- MAIN -->          -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- MAIN -->          -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+    background: rgb(242,92,92);
+    background: linear-gradient(180deg, rgba(242,92,92,1) 0%, rgba(226,141,76,1) 6%, rgba(204,182,72,1) 13%, rgba(195,193,82,1) 20%, rgba(167,199,79,1) 25%, rgba(141,191,78,1) 32%, rgba(109,181,91,1) 39%, rgba(95,164,111,1) 45%, rgba(71,143,150,1) 52%, rgba(81,127,150,1) 59%, rgba(96,115,166,1) 65%, rgba(110,102,182,1) 71%, rgba(133,76,195,1) 78%, rgba(152,74,181,1) 86%, rgba(186,62,136,1) 93%, rgba(242,0,84,1) 100%);
+}
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- MA BIO -->        -*@*-   */
+/*-*@**  <!--  MINI BAR DE NAV -->  -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+/*  <!-- -------------------------- -->
+    <!--  MINI BAR DE NAV LATERALE  -->
+    <!-- -------------------------- --> */
+
+
+
+   /*MINI BAR DE NAV   */
+.navbar{
+    position: absolute;
+    top:18.2%;
+    left: -13%;
+    width: 18vw;
+    color: #000;
+}
+
+.navbar ul{
+    float: right;
+    list-style: none;
+    flex-direction: column;
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 14px;
+    border: 2px solid rgb(32, 32, 32);
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding:1vh .2vw;
+    cursor: pointer;
+    border-radius: 50px;
+    transform: scale(1);
+
+}
+
+.navbar ul li:hover{
+    background: rgb(183, 253, 21);
+    color:#000;
+    transform:scale(2)
+}
+.navbar ul li a img{
+    width:3vh;
+}
+/*   ACTIVE QUAND LE HEADER NA PLUS DE HAUTER  */
+/* class utiliser pour le scroll  mini_bar_nav.js  */
+.fixed{
+    position:fixed;
+    top:11.5%;
+    z-index: 100;
+}
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- MA BIO -->        -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+/* ************* */
+
+.container_de_ma_bio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align:center;
+    padding: 16vh 19vw 17vw;
+    
+
+}
+.container_de_ma_bio .container_boulle1{
+    display: flex;
+    height:20vh;
+    position: relative;
+}
+/* -------------------- */
+/* <!-- BOULLE DECO --> */
+/* -------------------- */
+.container_de_ma_bio .container_boulle1 .boulle_bio1{
+    position: absolute;
+    top: 320%;
+    left: 67%;
+    height:50vh;
+    width: 30vw;
+    background: linear-gradient(215deg, #9d3574 35.71%, rgb(255, 218, 143) 76.47%);
+    clip-path: circle(22% at 52% 57%);
+    
+}
+.container_de_ma_bio .container_boulle1 .boulle_bio2{
+    position: absolute;
+    top: 53%;
+    left: -26%;
+    height:50vh;
+    width: 30vw;
+    background: linear-gradient(178deg, rgb(252, 204, 204) 0.84%, rgb(77, 130, 162) 37.39%, rgb(103, 32, 105) 72.28%, #000000);
+    clip-path: circle(19% at 53% 50%);
+    
+}
+
+/* BANDO MA BIO COULEUR VERT  */
+.container_de_ma_bio .bando_ma_bio{
+    display:flex;
+    position: relative;
+    left: 12%;
+}
+.container_de_ma_bio .bando_ma_bio .bio{
+    font-family:'Bebas Neue', cursive;
+    font-size:5rem;
+    font-weight:400;
+    background: rgb(183, 253, 21);
+    
+}
+
+/* ---------------- */
+/* <!-- MA BIO  SUITE--> */
+/* ---------------- */
+
+.container_de_ma_bio .texte_bio{
+    padding:2vh 4vw;
+    margin-top:8vh;
+    text-align: left;
+    font-family: Fira Mono,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace; 
+    font-size:1rem;
+    line-height:35px;
+    font-weight: 400;
+    backdrop-filter: blur(15px) ;
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(138, 138, 138, 0.2);
+    border: solid 1px;
+    border-color: #f7b624;
+    border-radius: 10px;
+
+}
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**      <!-- PREMIER -->       -*@*-   */
+/*-*@**    <!-- PREMIER BLOCK-->     -*@*-  */
+/*-*@**    <!-- CONTAINER_PHOTO-->   -*@*-  */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+
+.premier{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    align-items:center;
+    transition: background .4s ease-in;
+    padding-top:8vh;
+   
+}
+.premier .bando{
+    display: flex;
+    width:100%;
+    height:10vh;
+
+}
+.premier .bando .photo{
+    position: absolute;
+    top: 1%;
+    left: 78%;
+    font-family:'Bebas Neue', cursive;
+    font-size:4rem;
+    font-weight:400;
+    background: rgb(183, 253, 21);
+    padding:1vh;
+}
+/*  <!-- PREMIER BLOCK --> */
+.premier .premier_block{
+    height:55vh;
+    width:25vw;
+    border-radius:12px;
+    border:1px solid;
+    border-color:gold;
+    padding-bottom: 10vh;
+}
+.premier .premier_block .container_photo{
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    width: 100%;
+    max-width: 80vw;
+    max-height: 39vh;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**    <!-- CONTAINER_PHOTO--   -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+input[type=radio] {
+  display: none;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.card {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+ /* <!-- POSITON DES CARTS APRES CLIQUE  --> */
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+
+}
+.card img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+
+
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
+
+/* -------------------- */
+/* <!-- BOULLE DECO --> */
+/* -------------------- */
+
+.premier .container_boulle {
+    display: flex;
+    height:10vh;
+    width:10vh;
+    position: relative;
+}
+.premier .container_boulle .boulle_bio{
+    position: absolute;
+    top: -12%;
+    left: -650%;
+    height: 30vh;
+    width: 20vw;
+    background: repeating-linear-gradient(158deg, rgb(251, 251, 251) 0.42%, #e2e17c 13.03%, rgb(201, 152, 108) 33.19%, rgb(87, 38, 101) 67.23%, rgb(6, 1, 7) 86.98%, #160404 98.32%);
+    clip-path: circle(25% at 55% 46%);
+
+    
+}
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**   <!-- DEUXIEME BLOCK -->   -*@*-   */
+/*-*@**          <!-- TITRE -->     -*@*-   */
+/*-*@**          <!-- BOULLES-->    -*@*-   */
+/*-*@**      <!-- BLOCK TEXTE -->   -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+
+.deuxieme{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding:1vh 1vw 1vh;
+    align-items:center;
+    margin-bottom: 30vh;
+    padding-bottom:60vh;
+}
+.deuxieme .container_boulle{
+    display:flex;
+    height:3vh;
+    width:100%;
+
+    position:relative;
+    margin-right: -11vh;
+}
+
+/* -------------------- */
+/* <!-- BOULLE DECO --> */
+/* -------------------- */
+
+.container_boull2{
+    display: flex;
+    height: 10vh;
+    position: relative;
+}
+.container_boulle2 .boulle_bio1{
+    position: absolute;
+    left: 51%;
+    top: -10%;
+    height: 42vh;
+    width: 50vw;
+    background: linear-gradient(208deg, rgb(255, 249, 177) 11.76%, #f8eb4c 15.97%, rgb(251, 90, 44) 36.13%, #ae2d31 45.8%, rgb(0, 0, 0) 63.03%);
+    clip-path: circle(25% at 75% 45%);
+
+}
+.container_boulle3{
+    display: flex;
+    height: 10vh;
+    position: relative;
+}
+.container_boulle3 .boulle_bio2{
+    position: absolute;
+    top: -200%;
+    left: 100%;
+    height: 40vh;
+    width: 45vw;
+    background: repeating-linear-gradient(185deg, rgb(221, 210, 229), rgb(246, 64, 93) 33.19%, rgb(65, 31, 27) 60.08%, rgb(12, 7, 16) 69.75%, rgb(5, 1, 7) 95.38%);
+    clip-path: circle(19% at 38% 52%);
+}
+
+
+.container_boulle3 .boulle_bio4{
+    position: absolute;
+    top: 400%;
+    right: 200%;
+    height: 40vh;
+    width: 45vw;
+    background: repeating-linear-gradient(#7298f2, rgb(32, 229, 210) 20.59%, rgb(190, 19, 19) 60.5%, #160404 85.29%);
+    clip-path: circle(10% at 51% 43%);
+   
+    
+}
+
+ /* <!-- AVATAR--> */
+
+.avatar{
+    display:flex;
+    justify-content: center;
+    margin-bottom: -2vh;
+
+}
+.avatar img{
+    height: 30vh;
+}
+/* <!-- BANDO CV+Link --> */
+.block_texte .cv{
+    position:absolute;
+    top: 10%;
+    left: -16%;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    background: rgb(183, 253, 21);
+    padding: 1vh;
+    line-height: 7vh;
+    text-transform: uppercase;
+    transform:rotate(-90deg) translate( -50%,0);
+    transform-origin:0.75em center;
+}
+
+/* <!--  BLOCK TEXTE --> */
+.deuxieme .block_texte{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    padding:3vh 5vw;
+    width:50vw;
+    font-family: Fira Mono,Consolas,Monaco,Andale Mono,Ubuntu Mono,moospace;
+    background-color:#394549;
+    color: rgba(164, 164, 164, 0.5);
+    border-radius:12px;
+    border:1px solid;
+    border-color: gold;
+    box-shadow: 0 0 100px -1px #2a2828;
+     -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust:100%
+}
+
+
+.deuxieme .block_texte .symbole{
+    color: #dad62d;
+}
+.deuxieme .block_texte .balise{
+    color: #c83a3e;
+}
+.deuxieme .block_texte .balise2{
+    color: rgb(233, 154, 92);
+}
+.deuxieme .block_texte .contenue{
+    color: rgb(139, 176, 207);
+}
+.deuxieme .block_texte .crocher{
+    color: #d55cc5;
+}
+.deuxieme .block_texte a{
+    color:#54b182;
+    text-decoration: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+    
+}
+
+.deuxieme .block_texte a:hover{
+    color:#3fca57;
+    text-decoration: none;
+    border:1px solid;
+    border-color: aliceblue;
+}
+
+/* BANDO CONTACT */
+.contact{
+    position: absolute;
+    bottom: 9%;
+    left: 18%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    background: rgb(183, 253, 21);
+    padding: 1vh;
+    z-index: 100;
+}
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**         <!-- FOOTER -->     -*@*-   */
+/*-*@**    <!-- FOOTER ARRAY  -->   -*@*-   */
+/*-*@**  <!-- FOOTER CONTAINER -->  -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+.footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+	bottom:0;
+	left:0;
+	position:absolute;
+    width: 100%;
+    height: 21vh;
+    overflow:hidden;
+    padding-top:9vh;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:9;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 74vh;
+    
+}
+
+
+
+/* FOOOTER CONTAINER */
+.footer #container_footer{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+	padding-top:4vh;
+	width:97%;
+    height:100%;
+    position:relative;
+    top:15%;
+    left:0;
+	background: repeating-linear-gradient(#4b4b4b, rgb(55, 43, 43) 50.84%, #160404 83.19%);
+    border-top-left-radius: 140px;
+    border-top-right-radius:140px;
+    border:2px solid;
+    border-color:gold;
+}
+.footer #container_footer a{
+    color:rgb(243, 243, 243);
+    background-color:#394549;
+    border-radius:50px
+    
+}
+.footer #container_footer p{
+    color:rgb(243, 243, 243);
+    background-color:#394549;
+    border-radius:50px
+}
+.footer #container_footer a:hover{
+    color:rgb(137, 238, 42);
+    background-color:#767c7e;
+    
+}
+
+.footer #container_footer .logo img{
+    position: absolute;
+    top: 33%;
+    left: 1%;
+    width: 19vw;
+    border-radius: 0;
+    box-shadow: 0 0;
+}
+.footer #container_footer .mention_legale,
+ .footer #container_footer .contacts, 
+ .footer #container_footer .lien{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+   
+    
+    
+}
+
+
+/* ORIENTATION TEXTE FOOTER */
+.vertical0{
+    text-transform: uppercase;
+    transform: rotate(55deg) translate( 38%,0);
+    transform-origin: 7vw center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+    width:100%;
+
+}
+.vertical{
+    text-transform: uppercase;
+    transform: rotate(55deg) translate( 9%,0);
+    transform-origin: 5vw center;
+    font-family:'Roboto', sans-serif;
+    font-size:2rem;
+    font-weight: 300;
+    
+   
+}
+.vertical1{
+    text-transform: uppercase;
+    transform: rotate(55deg) translate( 15%,0);
+    transform-origin: 3vw center;
+    font-family:'Roboto', sans-serif;
+    font-size:1.3rem;
+    font-weight: 300;
+    
+}
+.vertical2{
+    text-transform: uppercase;
+    transform: rotate(55deg) translate( 0%,0);
+    transform-origin: 1em center;
+    font-family:'Roboto', sans-serif;
+    font-size:1.3rem;
+    font-weight: 300;
+    
+}
