@@ -46,7 +46,8 @@ body{
     width:100%;
     /* height:720vh; */
     border-radius:12px;
-    cursor: url(../IMG/pikachu\ -\ work.ani), auto ;
+    overflow-x:hidden;
+    max-width:1800px
 } 
 /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
 /*-*@**      <!-- CURSOR STYLE -->        -*@*-   */
@@ -307,22 +308,23 @@ main{
     flex-direction: column;
     width: 100%;
     text-align:center;
-    padding: 16vh 19vw 17vw;
+    padding: 6vh 19vw 17vw;
     
 
 }
 .container_de_ma_bio .container_boulle1{
     display: flex;
-    height:20vh;
-    position: relative;
+    height:30vh;
+    width:90%;
+    position: absolute;
 }
 /* -------------------- */
 /* <!-- BOULLE DECO --> */
 /* -------------------- */
 .container_de_ma_bio .container_boulle1 .boulle_bio1{
     position: absolute;
-    top: 320%;
-    left: 67%;
+    top: 297%;
+    left: 36%;
     height:50vh;
     width: 30vw;
     background: linear-gradient(215deg, #9d3574 35.71%, rgb(255, 218, 143) 76.47%);
@@ -331,8 +333,8 @@ main{
 }
 .container_de_ma_bio .container_boulle1 .boulle_bio2{
     position: absolute;
-    top: 53%;
-    left: -26%;
+    top: -10%;
+    left: -16%;
     height:50vh;
     width: 30vw;
     background: linear-gradient(178deg, rgb(252, 204, 204) 0.84%, rgb(77, 130, 162) 37.39%, rgb(103, 32, 105) 72.28%, #000000);
@@ -369,6 +371,7 @@ main{
     backdrop-filter: blur(15px) ;
     -webkit-backdrop-filter: blur(15px);
     background-color: rgba(138, 138, 138, 0.2);
+    box-shadow: 0 0 100px -1px #2f2e2e71;
     border: solid 1px;
     border-color: #f7b624;
     border-radius: 10px;
@@ -385,26 +388,24 @@ main{
 
 
 .premier{
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     position:relative;
     align-items:center;
     transition: background .4s ease-in;
-    padding-top:8vh;
+    padding: 20vh 2vw 50vh;
    
 }
 .premier .bando{
     display: flex;
+    justify-content: flex-end;
+    padding-right: 10vw;
     width:100%;
     height:10vh;
 
 }
-.premier .bando .photo{
-    position: absolute;
-    top: 1%;
-    left: 78%;
+.premier .bando .projets{
     font-family:'Bebas Neue', cursive;
     font-size:4rem;
     font-weight:400;
@@ -412,20 +413,19 @@ main{
     padding:1vh;
 }
 /*  <!-- PREMIER BLOCK --> */
-.premier .premier_block{
+/* .premier .premier_block{
     height:55vh;
     width:25vw;
     border-radius:12px;
     border:1px solid;
     border-color:gold;
     padding-bottom: 10vh;
-}
-.premier .premier_block .container_photo{
+} */
+.premier .container_photo{
     position: absolute;
-    top: 24%;
-    left: 10%;
+    top:33%;
+    left:0%;
     width: 100%;
-    max-width: 80vw;
     max-height: 39vh;
     height: 100%;
     transform-style: preserve-3d;
@@ -462,6 +462,7 @@ input[type=radio] {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  border:1px solid gold;
 }
  /* <!-- POSITON DES CARTS APRES CLIQUE  --> */
 
@@ -513,7 +514,7 @@ input[type=radio] {
 }
 .premier .container_boulle .boulle_bio{
     position: absolute;
-    top: -12%;
+    top: 730%;
     left: -650%;
     height: 30vh;
     width: 20vw;
@@ -659,6 +660,12 @@ input[type=radio] {
 }
 .deuxieme .block_texte .crocher{
     color: #d55cc5;
+}
+.deuxieme .block_texte .class{
+    color:rgb(231, 33, 238)
+}
+.deuxieme .block_texte .id{
+    color:rgb(44, 159, 236)
 }
 .deuxieme .block_texte a{
     color:#54b182;
@@ -820,3 +827,205 @@ input[type=radio] {
     font-weight: 300;
     
 }
+
+
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+/*-*@**   <!------------------>     -*@*-   */
+/*-*@**  ----- LES MEDIAS QUERY -----*@*-   */
+/*-*@**   <!--------------------->  -*@*-   */
+/* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+
+@media all and (max-width:1300px){
+    .premier .premier_block{
+        width: 40vw;
+    }
+}
+
+
+@media all and (max-width:1100px){
+    .container_de_ma_bio{
+        padding: 6vh 10vw 17vw;
+    }
+    .deuxieme .block_texte{
+        width: 70vw;
+    }
+    .footer #container_footer {
+        width: 100%;
+    }
+    .footer:hover{
+        height:65vh;
+    }
+    .footer #container_footer .logo img{
+        top:43%;
+    }
+    #container_footer .vertical0{
+        font-size: 1.3rem;
+    }
+    
+    #container_footer .vertical{
+        transform: rotate(55deg) translate( 8%,0);
+        transform-origin: 3vw center;
+        font-size: 1.6rem;
+    }
+    #container_footer .vertical1{
+        transform-origin: 0vw center;
+    }
+    #container_footer .vertical2{
+        transform-origin: -2em center;
+    }
+}
+@media all and (max-width:815px){
+    #bannertext{
+        top: 10%;
+        left: 56%;
+    }
+    nav{
+        width: 90vw;
+        height: 49vh;
+    }
+    nav .container_nav{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .titre_principale{
+
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .titre_principale h1{
+        font-size: 10vh;
+    }
+    .lettre_m{
+        font-size: 11vh;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding-left: 7vw;
+    }
+
+    .navbar{
+        display:none;
+    }
+    .container_de_ma_bio{
+        padding: 11vh 1vw 17vw;
+    }
+
+    .container_de_ma_bio .texte_bio{
+        font-size: 12px;
+    }
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- PREMIER BLOCK-----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    .premier{
+        padding: 4vh 2vw 50vh;
+    }
+    .premier .container_photo{
+        top:25%;
+    }
+
+    .card{
+        width:60%;
+    }
+     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- DEUXIEME BLOCK-----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    .avatar img{
+        height: 16vh;
+    }
+    .deuxieme{
+        padding-bottom: 10vh;
+        margin-bottom: 15vh;
+    }
+    .deuxieme .block_texte{
+        width: 96%;
+        padding: 3vh 1vw;
+        font-size: 10px;
+    }
+    .block_texte .cv{
+        transform: none;
+        top:-290px;
+        left:50px;
+    }
+    .contact{
+        display:none;
+    }
+     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- FOOTER-----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    
+    footer{
+        display: contents;
+        height: 80vh;
+        width: 100%;
+        padding:6vh 0;
+
+    }
+    
+    .footer{
+        position:relative;
+        padding-top: 0;
+        width:100%;
+        height:65vh;
+    }
+    .footer:not(:hover){
+       pointer-events: none;
+    }
+    .footer #container_footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding-top: 0;
+        width:100%;
+        position:relative;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        top:0;
+        left:0;
+    }
+    
+    .footer .arrow{
+         display:none;
+    }
+    .arrow1{
+        display:none;
+    }
+    .arrow2{
+        display:none;
+    }
+    #container_footer .vertical0{
+        transform: none;
+        transform-origin:none;
+    }
+    #container_footer .vertical{
+        transform: none;
+        transform-origin:none;
+    }
+    #container_footer .vertical1{
+        transform: none;
+        transform-origin:none;
+    }
+    #container_footer .vertical2{
+        transform: none;
+        transform-origin:none;
+    }
+    .footer #container_footer .logo{
+        position: relative;
+        height: 25vh;
+        width: 100%;
+    }
+    .footer #container_footer .logo img{
+        left: 9%;
+        top:-23%;
+        width: 77vw;
+    }
+
+}
+
