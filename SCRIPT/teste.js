@@ -9,9 +9,9 @@
 
 // var height=document.getElementById("header").height();
 
-$(document).scroll(function () {
-    $(".navbar").toggleClass(
-      "fixed",
-      $(this).scrollTop() > $("header").height()
-    );
-  });
+// $(document).scroll(function () {
+//     $(".navbar").toggleClass(
+//       "fixed",
+//       $(this).scrollTop() > $("header").height()
+//     );
+//   });

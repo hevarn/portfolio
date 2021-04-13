@@ -17,8 +17,6 @@
       <!-- ---------- -->
       <!-- SOURCES JS -->
       <!-- ---------- -->
-      <script src="./SCRIPT/hover_cursor.js"></script>
-
       <!-- soucre jquery pour le scroll + fichier lié  -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <!-- TEST -->
@@ -52,13 +50,14 @@
 
   <body>
 
-    <div class="pointer1"></div>
-    <div class="pointer2"></div>
       <!-- HEADER -->   <!-- TITRE -->
       <!-- BARRE DE MENU -->
     <header id="banner" >
+      
       <div class="container_de_la_nav" id="header">
+        
         <nav id="bannertext" class="mouvement" data-tilt data-tilt-max="18" data-tilt-speed="200"data-tilt-perspective="3000">
+          <img src="./IMG/moi1.png" alt="logo de moi">
           <div class="container_nav" >
             <div class="titre_principale">
                         <!--TITRE DE LA NAV--> 
@@ -158,26 +157,31 @@
         <div class="bando">
           <span class="projets">LES PROJETS</span>
         </div>
-        <!-- <div class="premier_block"></div> -->
-          <!--TYPE CAROUSELLE--> 
-        <div class="container_photo">
-          <input type="radio" name="slider" id="item-1" checked>
-          <input type="radio" name="slider" id="item-2">
-          <input type="radio" name="slider" id="item-3">
-          <div class="cards">
-              <!-- IMAGE DU CAROUSELLE--> 
-            <label class="card" for="item-1" id="song-1">
-              <img src="https://images.unsplash.com/photo-1601537696316-97ccda87e71e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80" alt="song1">
-            </label>
-            <label class="card" for="item-2" id="song-2">
-              <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song2">
-            </label>
-            <label class="card" for="item-3" id="song-3">
-              <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song3">
-            </label>
-          </div>
-        </div>
-        
+        <label class="label"for="slide1"><a href="https://github.com/hevarn/ddos-attack/blob/master/main.py">click ici pour voir le projet</a><img src="./IMG/moi3.png" alt="logo de moi"></label>
+        <label class="label1"for="slide2"><a href="https://github.com/hevarn/spam-mail-.git">click ici pour voir le projet</a><img src="./IMG/moi4.png" alt=""></label> 
+        <label class="label2"for="slide3"><a href="https://github.com/hevarn/portfolio.git">click ici pour voir le projet</a><img src="./IMG/moi5.png" alt=""></label>
+        <label class="label3"for="slide4"><a href="#">bientôt binetôt!!</a><img src="./IMG/moi6.png" alt=""></label>
+        <ul class="slider">
+          <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img href="https://github.com/hevarn/ddos-attack/blob/master/main.py" src="./IMG/projet-ddos.png" alt="image de code informatique">
+          </li>
+          <li>
+            <input type="radio" id="slide2" name="slide">
+            <label for="slide2"></label>
+            <img href="https://github.com/hevarn/spam-mail-.git"src="./IMG/spam-mail.png" alt="image de code informatique">
+          </li>
+          <li>
+            <input type="radio" id="slide3" name="slide">
+            <label for="slide3"></label>
+            <img href="https://github.com/hevarn/portfolio.git"src="./IMG/portfolio.png" alt="image de code informatique">
+          </li>
+          <li>
+            <input type="radio" id="slide4" name="slide">
+           <p>bientôt bientôt..</p>
+          </li>
+        </ul>
         <!-- -------------- -->
         <div class="container_boulle">
           <div class="boulle_bio"></div>
@@ -254,37 +258,45 @@
             <p>&nbsp;39..<span class="class">.</span><span class="class">realisation</span><span class="symbole"> {</span></p>
             <p>&nbsp;40.....<span class="balise2">"mars 2021"</span><span class="symbole">:</span> &nbsp;<span class="contenue">"portfolio"</span><span class="symbole">;{</span></p>
             <!-- LIEN PORTFOLIO -->
-            <p>&nbsp;41.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span >[www.@.com]</span></a></p>
-            <p>&nbsp;42.....<span class="balise2">"avril 2021"</span><span class="symbole">:</span> &nbsp;<span class="contenue">"hackaton"</span><span class="symbole">;{</span></p>
-                <!-- LIEN HACKATON -->
-            <p>&nbsp;43.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">[www.@.com]</a></p>
-            <p>&nbsp;44..<span class="symbole">}</span></p>
-            <p>&nbsp;45&nbsp; &nbsp;&nbsp;</p>
-            <p>&nbsp;46&nbsp; &nbsp;&nbsp;</p>
-            <p>&nbsp;47&nbsp; &nbsp;&nbsp;</p>
-            <p>&nbsp;48...<span class="class">.</span><span class="class">link</span><span class="symbole"> {</span></p>
-            <p>&nbsp;49......<span class="contenue">"website"</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;<span class="symbole">"</span>
-                <!-- LIEN VERS MON SITE -->
-            <a href="#">www.@.com</a><span class="symbole">"</span> </p>
-            <p>&nbsp;49......<span class="contenue">"github"</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <!-- LIEN VERS GIT -->  
-            <span class="symbole">"</span><a href="#">www.@.com</a><span class="symbole">"</span> </p>
-            <p>&nbsp;49......<span class="contenue">"linkedin"</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;<span class="symbole">"</span><!-- LIEN VERS LINKEDIN-->
-            <a href="#">www.@.com</a><span class="symbole">" </span></p>
-            <p>&nbsp;49......<span class="contenue">"instagram"</span><span class="symbole">:</span>&nbsp;&nbsp;<span class="symbole">"
-                <!-- LIEN VERS INSTAGRAM-->
-            </span><a href="#">www.@.com</a><span class="symbole"></span><span class="symbole">"</span> </p>
-            <p>&nbsp;50..<span class="symbole">}</span></p>
-            <p>&nbsp;51&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;41.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://e-moderni-devweb.fr"><span >https://e-moderni-devweb.fr</span></a></p>
+            <!-- LES PROJETS GIT -->
+            <p>&nbsp;42.....<span class="balise2">"avril 2021"</span><span class="symbole">:</span> </p>   
+            <p>&nbsp;43.....<span class="contenue">"projet-ddos dans le but de "pentest" mon servers"</span><span class="symbole">;{</span></p>
+            <p>&nbsp;44.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hevarn/ddos-attack.git"><span >https://git-ddos</span></a></p>
+            <p>&nbsp;45.....<span class="balise2">"octobre 2020"</span><span class="symbole">:</span> </p>   
+            <p>&nbsp;46.....<span class="contenue">"projet-spam probleme service client orange"</span>
+            <p>&nbsp;47.....<span class="contenue">"*200mail/2min du coup plus de probleme"</span><span class="symbole">;{</span></p>
+            <p>&nbsp;48.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hevarn/spam-mail-.git"><span >https://git-spam-mail</span></a></p>
+            <!-- LIEN HACKATON -->
+            <p>&nbsp;49.....<span class="balise2">"Comming soon"</span><span class="symbole">:</span> &nbsp;<span class="contenue">"hackaton"</span><span class="symbole">;{</span></p>
+            <p>&nbsp;50.....&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">[www.bientôt-bientôt.com]</a></p>
+            <p>&nbsp;51..<span class="symbole">}</span></p>
             <p>&nbsp;52&nbsp; &nbsp;&nbsp;</p>
             <p>&nbsp;53&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;54&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;55...<span class="class">.</span><span class="class">link</span><span class="symbole"> {</span></p>
+            <p>&nbsp;56......<span class="contenue">"website"</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;<span class="symbole">"</span>
+                <!-- LIEN VERS MON SITE -->
+            <a href="https://e-moderni-devweb.fr">https://e-moderni-devweb.fr</a><span class="symbole">"</span> </p>
+            <p>&nbsp;57......<span class="contenue">"github"</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- LIEN VERS GIT -->  
+            <span class="symbole">"</span><a href="https://github.com/hevarn">https://github</a><span class="symbole">"</span> </p>
+            <p>&nbsp;58......<span class="contenue">"linkedin"</span><span class="symbole">:</span>&nbsp;&nbsp;&nbsp;<span class="symbole">"</span><!-- LIEN VERS LINKEDIN-->
+            <a href="https://www.linkedin.com/in/ehoarn-moderni-a18069206/">https://linkedin</a><span class="symbole">" </span></p>
+            <p>&nbsp;59......<span class="contenue">"instagram"</span><span class="symbole">:</span>&nbsp;&nbsp;<span class="symbole">"
+                <!-- LIEN VERS INSTAGRAM-->
+            </span><a href="https://www.instagram.com/he_varne/">https://instagram</a><span class="symbole"></span><span class="symbole">"</span> </p>
+            <p>&nbsp;60..<span class="symbole">}</span></p>
+            <p>&nbsp;61&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;62&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;63&nbsp; &nbsp;&nbsp;</p>
             <!-- LES HOBBY -->
-            <p>&nbsp;54...<span class="id">#</span><span class="id">hobby</span><span class="symbole"> {</span></p>
-            <p>&nbsp;55.....<span class="crocher">[</span><span class="contenue">PHOTO</span><span class="crocher">]</span><span class="symbole">;</span></p>
-            <p>&nbsp;56.....<span class="crocher">[</span><span class="contenue">CUISINE</span><span class="crocher">]</span><span class="symbole">;</span></p>
-            <p>&nbsp;55.....<span class="crocher">[</span><span class="contenue">VELO DE COURS</span><span class="crocher">]</span><span class="symbole">;</span></p>
-            <p>&nbsp;56..<span class="symbole">}</span></p>
-            <p>&nbsp;57&nbsp; &nbsp;&nbsp;</p>
+            <p>&nbsp;64...<span class="id">#</span><span class="id">hobby</span><span class="symbole"> {</span></p>
+            <p>&nbsp;65.....<span class="crocher">[</span><span class="contenue">PHOTO</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;66.....<span class="crocher">[</span><span class="contenue">CUISINE</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;65.....<span class="crocher">[</span><span class="contenue">VELO DE COURS</span><span class="crocher">]</span><span class="symbole">;</span></p>
+            <p>&nbsp;66..<span class="symbole">}</span></p>
+            <p>&nbsp;67&nbsp; &nbsp;&nbsp;</p>
 
           </div>          
         </div>
@@ -310,7 +322,7 @@
           <!-- FOOTER CONTAINER -->
           <div id="container_footer">
             <div class="logo">
-                <img src="./IMG/moi.png" alt="logo de moi ">
+                <img src="./IMG/moi2.png" alt="logo de moi ">
             </div>
             <div class="mention_legale">
               <p class="vertical0" class="droit">© Tous droits réservés - 2021</p>
@@ -323,9 +335,9 @@
             </div>
             <div class="lien">
                 <p class="vertical0">liens</p>
-                <a class="vertical" href="#">Github</a>
-                <a class="vertical1" href="#">Instagram</a>
-                <a class="vertical2" href="#">linkedin</a>
+                <a class="vertical" href="https://github.com/hevarn">Github</a>
+                <a class="vertical1" href="https://www.instagram.com/he_varne/">Instagram</a>
+                <a class="vertical2" href="https://www.linkedin.com/in/ehoarn-moderni-a18069206/">linkedin</a>
             </div>
           </div>
         </div>
@@ -343,11 +355,28 @@
       <!-- LES SCRIPTS -->
       <script type="text/javascript" src="./SCRIPT/vanilla-tilt.js"></script>
       <!-- <script src="./SCRIPT/hover_cursor.js"></script> -->
+      <!-- permé le scroll du swiper  -->
+      <script>
+        var swiper = new Swiper('.blog-slider', {
+          spaceBetween: 30,
+          effect: 'fade',
+          loop: true,
+          mousewheel: {
+            invert: false,
+          },
+          // autoHeight: true,
+          pagination: {
+            el: '.blog-slider__pagination',
+            clickable: true,
+          }
+        });
+      </script>
       <script>
       if (typeof bodymovin == 'undefined') {
           document.write(unescape("%3Cscript src='bodymovin-0ad83d672f.js' type='text/javascript'%3E%3C/script%3E"));
       }
       </script>
+      <!-- effet parallax header -->
       <script>
         function EasyPeasyParallax() {
           scrollPos = $(this).scrollTop();
