@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
 
       <!-- ----------- -->
       <!-- FEUILLE CSS -->
@@ -53,10 +54,8 @@
       <!-- HEADER -->   <!-- TITRE -->
       <!-- BARRE DE MENU -->
     <header id="banner" >
-      
       <div class="container_de_la_nav" id="header">
-        
-        <nav id="bannertext" class="mouvement" data-tilt data-tilt-max="18" data-tilt-speed="200"data-tilt-perspective="3000">
+        <nav class="mouvement" data-tilt data-tilt-max="18" data-tilt-speed="200"data-tilt-perspective="3000">
           <img src="./IMG/moi1.png" alt="logo de moi">
           <div class="container_nav" >
             <div class="titre_principale">
@@ -357,7 +356,7 @@
       <!-- <script src="./SCRIPT/hover_cursor.js"></script> -->
       <!-- permé le scroll du swiper  -->
       <script>
-        var swiper = new Swiper('.blog-slider', {
+        var swiper = document.querySelector('.blog-slider', {
           spaceBetween: 30,
           effect: 'fade',
           loop: true,

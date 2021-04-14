@@ -131,24 +131,41 @@ body{
 
 
  header{
-     position: relative;
      display:flex;
-     flex-direction:column;
+     justify-content:center;
      align-items:center;
      width: 100%;
      height: 100vh;
+     padding: 25vh 23vw 35vh 23vw;
      
  }
- 
+ header .container_de_la_nav{
+     display:flex; 
+     position: relative;
+     align-items:center;
+     justify-content:center;
+     width: 100%;
+     height: 100%;
+     
+    
+ }
 
 /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
 /*-*@**      <!-- TITRE -->         -*@*-   */
 /*-*@**      <!-- LA NAV -->         -*@*-  */
 /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
 
-
+/* SCROLL EFFET PARALAX SCROLL.JS */
+#banner { 
+    background: url(https://images.unsplash.com/photo-1483357962636-e8cc552b1a08?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80) no-repeat fixed 10% 100%; 
+    background-size: cover; 
+    
+}
 
 nav{
+    width: 100%;
+    height: 100%;
+    padding:2vh;
     border-radius:10px;
     z-index: 10;
     backdrop-filter: blur(15px);
@@ -157,11 +174,11 @@ nav{
     background-color: rgba(138, 138, 138, 0.2);
     border:2px solid rgba(255, 255, 255, .2);
     box-shadow: 5px 5px 30px rgba(0,0,0,.2);
-    min-width: 40vw;
+    border: 2px solid #fff; 
+    
    
 }
 nav .container_nav{
-    
     display:flex;
     flex-direction:column;
 }
@@ -180,18 +197,15 @@ header img {
 }
 .titre_principale h1{
     font-family: 'Bebas Neue', cursive; 
-    font-size:16vh;
+    font-size:9rem;
     font-weight:400;
     letter-spacing:.3vw;
     
 }
 .lettre_m{
     font-family: 'Anton', sans-serif;
-    font-size:18vh;
     font-weight: 400;
     background-color: rgb(183, 253, 21);
-    
-   
 }
 ul{
     display:flex;
@@ -201,7 +215,6 @@ ul{
 }
 
 nav ul li a{ 
-    font-size:1em;
     text-decoration:none;
     transition: all .3s ease;
     color: black;
@@ -214,21 +227,7 @@ nav ul li a:hover{
     color: rgb(183, 253, 21);
 }
 
-/* SCROLL EFFET PARALAX SCROLL.JS */
-#banner { 
-    background: url(https://images.unsplash.com/photo-1483357962636-e8cc552b1a08?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80) no-repeat fixed 10% 100%; 
-    background-size: cover; 
-    
-}
 
-#bannertext { 
-    position: fixed; 
-    top: 20%; 
-    left: 43%; 
-    border: 2px solid #fff; 
-    margin-left: -12em; 
-    
-}
 
 /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
 /*-*@**      <!-- MAIN -->          -*@*-   */
@@ -941,175 +940,96 @@ input:checked{
     }
 }
 @media all and (max-width:1500px){
+    header{
+        padding: 25vh 23vw 22vh 23vw;
+    }
+    header img{
+        width: 19vh;
+        top: -17%;
+    }
+
     .premier .label{
-        widht:13%;
+        width:13%;
     }
     .premier .label1{
-        widht:13%;
+        width:13%;
     }
     .premier .label2{
-        widht:13%;
+        width:13%;
     }
     .premier .label3{
-        widht:13%;
+        width:13%;
     }
 }
 
 @media all and (max-width:1300px){
+    header{
+        padding: 25vh 23vw 22vh 23vw;
+    }
+
+    header img{
+        width: 19vh;
+    }
+
     .premier .premier_block{
         width: 40vw;
     }
     .premier .label{
-        widht:15%;
+        width:15%;
     }
     .premier .label1{
-        widht:15%;
+        width:15%;
     }
     .premier .label2{
-        widht:15%;
+        width:15%;
     }
     .premier .label3{
-        widht:15%;
+        width:15%;
     }
 }
 
 
 @media all and (max-width:1100px){
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- la nav barre----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    header{
+        padding: 22vh 15vw 31vh 15vw;
+    }
+    nav {
+        will-change: none;
+        transform:none;
+    }
+    
+    nav ul li a{
+        font-size:2rem;
+    }
+    
     .container_de_ma_bio{
         padding: 6vh 10vw 17vw;
     }
 
-    /* le slider */
-    .slider{
-        left:61%;
-    }
-    .premier:hover label{
-        left:18%;
-    }
-    .premier .label{
-        widht:17%;
-    }
-    .premier .label1{
-        widht:17%;
-    }
-    .premier .label2{
-        widht:17%;
-    }
-    .premier .label3{
-        widht:17%;
-    }
-    /* deuxieme block texte */
-    .deuxieme .block_texte{
-        width: 70vw;
-    }
 
-    /* footer */
-    .footer #container_footer {
-        width: 100%;
-    }
-    .footer:hover{
-        height:65vh;
-    }
-    .footer #container_footer .logo img{
-        top:43%;
-    }
-    #container_footer .vertical0{
-        font-size: 1.3rem;
-    }
-    
-    #container_footer .vertical{
-        transform: rotate(55deg) translate( 8%,0);
-        transform-origin: 3vw center;
-        font-size: 1.6rem;
-    }
-    #container_footer .vertical1{
-        transform-origin: 0vw center;
-    }
-    #container_footer .vertical2{
-        transform-origin: -2em center;
-    }
-}
-
-
-@media all and (max-width:900px){
-    
-    /* .slider{
-        left:68%;
-    } */
-}
-
-@media all and (max-width:815px){
-    #bannertext{
-        top: 15%;
-        left: 56%;
-    }
-    header img{
-        top:-31%;
-    }
-    nav{
-        width: 90vw;
-        height: 49vh;
-    }
-    nav .container_nav{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .titre_principale{
-
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-    }
-    .titre_principale h1{
-        font-size: 10vh;
-    }
-    .lettre_m{
-        font-size: 11vh;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-        padding-left: 7vw;
-    } 
-    
-    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
-    /*-*@**   <!------------------>     -*@*-   */
-    /*-*@**  -----        MA BIO    -----*@*-   */
-    /*-*@**   <!--------------------->  -*@*-   */
-    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
-
-    .navbar{
-        display:none;
-    }
-    .container_de_ma_bio{
-        padding: 11vh 1vw 17vw;
-    }
-    .container_de_ma_bio .bando_ma_bio{
-        left: 0;
-    }
     .container_de_ma_bio .bando_ma_bio .bio {
         font-size: 4rem;
-        
     }
-    .container_de_ma_bio .texte_bio{
-        font-size: 12px;
-    }
-    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
-    /*-*@**   <!------------------>     -*@*-   */
-    /*-*@**  ----- PREMIER BLOCK-----*@*-   */
-    /*-*@**   <!--------------------->  -*@*-   */
-    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
     .premier{
+        height:90vh;
         padding: 8vh 2vw 0vh;
-        height:50vh;
+        margin-bottom: 45vh;
+        
     }
     /* BANDO    "LES PROJETS" */
     .premier .bando{
-        height:6vh;
-        padding-right: 28vw;
+        height:11vh;
+        padding-right: 21vw;
     }
     .premier .bando .projets{
         font-size:2rem;
-        padding: 1vh;
+        padding: 2vh 2vw;
     }
     .premier .label{
         display:none;
@@ -1128,8 +1048,8 @@ input:checked{
 
 
     .slider{
-        width: 15em;
-        height: 11.75em;
+        width: 35em;
+        height: 27em;
         left:50%;
         top: 40%;
     }
@@ -1153,44 +1073,31 @@ input:checked{
         background-color: #fff;
     }
     .slider li:nth-child(1) label {
-        left: .5em;
+        left: 8.5em;
     }
     .slider li:nth-child(2) label {
-        left: 5em;
+        left: 16em;
     }
     .slider li:nth-child(3) label {
-        left: 9.5em;
+        left: 22.5em;
     }
 
-     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /* deuxieme block texte */
+    .deuxieme .block_texte{
+        width: 70vw;
+    }
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
     /*-*@**   <!------------------>     -*@*-   */
-    /*-*@**  ----- DEUXIEME BLOCK-----*@*-   */
+    /*-*@**  ----- deuxieme block----*@*-   */
     /*-*@**   <!--------------------->  -*@*-   */
     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
-    .avatar img{
-        height: 16vh;
-    }
-    .deuxieme{
-        padding-bottom: 10vh;
-        margin-bottom: 15vh;
-    }
-    .deuxieme .block_texte{
-        width: 96%;
-        padding: 3vh 1vw;
-        font-size: 10px;
-    }
-    .block_texte .cv{
-        transform: none;
-        top:0;
-        left:100px;
-        padding: 0;
-        font-size: 18px;
-        line-height: 5vh;
-    }
+
     .contact{
-        display:none;
+        bottom: 11%;
+        font-size:3rem;
     }
-     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
     /*-*@**   <!------------------>     -*@*-   */
     /*-*@**  ----- FOOTER-----*@*-   */
     /*-*@**   <!--------------------->  -*@*-   */
@@ -1208,7 +1115,7 @@ input:checked{
         position:relative;
         padding-top: 0;
         width:100%;
-        height:65vh;
+        height: 100vh;
     }
     .footer:not(:hover){
        pointer-events: none;
@@ -1263,10 +1170,342 @@ input:checked{
         width: 100%;
     }
     .footer #container_footer .logo img{
-        left: 9%;
-        top:-23%;
-        width: 77vw;
+        left: 35%;
+        top: -52%;
+        width: 31vw;
+    }
+    footer #container_footer p {
+        color: rgb(243, 243, 243);
+        background-color: #394549;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+
+.footer #container_footer a {
+    color: rgb(243, 243, 243);
+    background-color: #394549;
+    border-radius: 50px;
+    font-size: 20px;
     }
 
 }
+@media all and (max-width:1000px) {
+    header {
+        padding: 26vh 15vw 31vh 15vw;
+    }
+    header img{
+        width:18vh
+    }
+}
+
+@media all and (max-width:930px){
+    header {
+        padding: 26vh 15vw 35vh 15vw;
+    }
+    header img{
+        top: -19%;
+    }
+    .titre_principale h1{
+        font-size:8rem;
+    }
+    .footer #container_footer .logo img {
+        left: 35%;
+        top: -3%;
+        width: 31vw;
+    }
+}
+@media all and (max-width:850px){
+    header img{
+        top: -22%;
+    }
+    .titre_principale h1{
+        font-size:7rem;
+    }
+    .footer #container_footer .logo img {
+        left: 35%;
+        top: -3%;
+        width: 31vw;
+    }
+}
+
+@media all and (max-width:730px){
+    .titre_principale h1{
+        font-size:6rem;
+    }
+
+    .footer #container_footer .logo img {
+        left: 35%;
+        top: -3%;
+        width: 31vw;
+    }
+}
+@media all and (max-width:700px){
+    header {
+        padding: 22vh 25vw 31vh 25vw;
+    }
+    
+    header img{
+        top:-39%;
+    }
+    nav{
+        width: 90vw;
+        height: 49vh;
+    }
+    nav .container_nav{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .titre_principale{
+
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .titre_principale h1{
+        font-size: 10vh;
+    }
+    .lettre_m{
+        font-size: 8vh;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding-left: 7vw;
+    }
+
+    .slider {
+        width: 25em;
+        height: 16.75em;
+        left: 50%;
+        top: 40%;
+}
+
+@media all and (max-width:500px){
+   
+    header img{
+        top:-39%;
+    }
+    nav{
+        width: 90vw;
+        height: 49vh;
+    }
+    nav .container_nav{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .titre_principale{
+
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .titre_principale h1{
+        font-size: 10vh;
+    }
+    .lettre_m{
+        font-size: 8vh;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding-left: 7vw;
+    } 
+    
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  -----        MA BIO    -----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+
+    .navbar{
+        display:none;
+    }
+    .container_de_ma_bio{
+        padding: 11vh 1vw 17vw;
+    }
+    .container_de_ma_bio .bando_ma_bio{
+        left: 0;
+    }
+    .container_de_ma_bio .bando_ma_bio .bio {
+        font-size: 4rem;
+        
+    }
+    .container_de_ma_bio .texte_bio{
+        font-size: 12px;
+    }
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- PREMIER BLOCK-----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    .premier{
+        padding: 8vh 2vw 0vh;
+    }
+    /* BANDO    "LES PROJETS" */
+    .premier .bando{
+        height:6vh;
+        padding-right: 28vw;
+    }
+    .premier .bando .projets{
+        font-size:2rem;
+        padding: 1vh;
+    }
+    .premier .label{
+        display:none;
+    }
+    .premier .label1{
+        display:none;
+    }
+    .premier .label2{
+        display:none;
+    }
+    .premier .label3{
+        display:none;
+    }
+
+    /* le slider */
+
+
+    .slider{
+        width: 21em;
+        height: 16.75em;
+        left:50%;
+        top: 40%;
+    }
+    .slider label {
+        background-color: #111;
+        background-image:#000;
+        border:1px solid gold;
+        bottom: -7.5em;
+        border-radius: 100%;
+        cursor: pointer;
+        display: block;
+        height: 3.5em;
+        width: 3.5em;
+        left: 0em;
+        opacity: 1;
+        position: absolute;
+        
+    }
+
+    .slider input:checked + label {
+        background-color: #fff;
+    }
+    .slider li:nth-child(1) label {
+        left: 3.5em;
+    }
+    .slider li:nth-child(2) label {
+        left: 8em;
+    }
+    .slider li:nth-child(3) label {
+        left: 12.5em;
+    }
+
+     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- DEUXIEME BLOCK-----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    .avatar img{
+        height: 16vh;
+    }
+    .deuxieme{
+        padding-bottom: 10vh;
+        margin-bottom: 15vh;
+    }
+    .deuxieme .block_texte{
+        width: 96%;
+        padding: 3vh 1vw;
+        font-size: 10px;
+    }
+    .block_texte .cv{
+        transform: none;
+        top:0;
+        left:100px;
+        padding: 0;
+        font-size: 18px;
+        line-height: 5vh;
+    }
+    .contact{
+        display:none;
+    }
+     /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*--/
+    /*-*@**   <!------------------>     -*@*-   */
+    /*-*@**  ----- FOOTER-----*@*-   */
+    /*-*@**   <!--------------------->  -*@*-   */
+    /* -*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*@*-*/
+    
+    footer{
+        display: contents;
+        height: 80vh;
+        width: 100%;
+        padding:6vh 0;
+
+    }
+    
+    .footer{
+        position:relative;
+        padding-top: 0;
+        width:100%;
+        height: 100vh;
+    }
+    .footer:not(:hover){
+       pointer-events: none;
+    }
+    .footer #container_footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding-top: 0;
+        width:100%;
+        position:relative;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        top:0;
+        left:0;
+    }
+    /* DESACTIVATION DES FLECHES D'INDICATION POUR LE MOBILE  */
+    .footer .arrow{
+         display:none;
+    }
+    .arrow1{
+        display:none;
+    }
+    .arrow2{
+        display:none;
+    }
+    /* DESACTIVATION DE L'ORIENTATION DU FOOTER  */
+    #container_footer .vertical0{
+        transform: none;
+        transform-origin:none;
+    }
+    #container_footer .vertical{
+        transform: none;
+        transform-origin:none;
+    }
+    #container_footer .vertical1{
+        transform: none;
+        transform-origin:none;
+    }
+    #container_footer .vertical2{
+        transform: none;
+        transform-origin:none;
+    }
+    .footer #container_footer a:hover{
+        color:rgb(137, 238, 42);
+        background-color:#767c7e;
+        
+    }
+    .footer #container_footer .logo{
+        position: relative;
+        height: 25vh;
+        width: 100%;
+    }
+    .footer #container_footer .logo img{
+        left: 25%;
+        top: 12%;
+
+        width: 50vw;
+    }
+
+}
+
 
