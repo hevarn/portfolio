@@ -434,7 +434,7 @@ main{
     font-family: 'Bebas Neue', cursive;
  }
 /* les enfant de la balise premier 2 a 5  */
-.premier .label:nth-child(1){
+.premier .label:nth-child(5){
     top:40%;
 }
 .premier .label:nth-child(2){
@@ -456,9 +456,6 @@ main{
     background-color: rgba(172, 255, 47, 0.15);
 }
 
-input:checked{
-    background-color: #fff;
-}
 
 .premier .bando{
     display: flex;
@@ -951,8 +948,13 @@ footer .container_footer .sous_container_footer2 ul a .phone2:hover{
         left: 63%;
     }
     .premier .label{
-        opacity:1;
+        opacity: 1;
+        left: 135%
     }
+    .premier:not(:hover) label {
+        opacity: 1;
+        visibility: visible; 
+    } 
     .premier label:hover{
         left: 15%;
     }
@@ -1046,19 +1048,33 @@ footer .container_footer .sous_container_footer2 ul a .phone2:hover{
         font-size:2rem;
         padding: 2vh 2vw;
     }
-    .premier label:nth-child(1){
-        display:none;
+    .premier .label { 
+    
+        -webkit-transform: rotate(325deg);
+        -moz-transform: rotate(325deg);
+         -ms-transform: rotate(325deg);
+          -o-transform: rotate(325deg);
+             transform: rotate(325deg);
+        
     }
-    .premier label:nth-child(2){
-        display:none;
+    /* quand la souris passe sur le contain
+    /* les enfant de la balise premier 2 a 5  */
+    .premier .label:nth-child(5){
+        top: 105%;
+        left: 70%;
     }
-    .premier label:nth-child(3){
-        display:none;
+    .premier .label:nth-child(2){
+        top: 105%;
+        left: 28%;
     }
-    .premier label:nth-child(4){
-        display:none;
+    .premier .label:nth-child(3){
+        top: 105%;
+        left: 7%;
     }
-
+    .premier .label:nth-child(4){
+        top: 105%;
+        left: 49%;
+    }
     /* le slider */
 
     .slider{
@@ -1108,6 +1124,7 @@ footer .container_footer .sous_container_footer2 ul a .phone2:hover{
     footer .container_footer .sous_container_footer2 .lien p{
         display:none;
     }
+    
 }
 
 @media all and (max-width:930px){
@@ -1195,6 +1212,26 @@ footer .container_footer .sous_container_footer2 ul a .phone2:hover{
     .titre_principale h1{
         font-size:7rem;
     }
+    .premier .label:nth-child(5){
+        top: 105%;
+        left: 70%;
+        width:28%;
+    }
+    .premier .label:nth-child(2){
+        top: 105%;
+        left: 28%;
+        width:28%;
+    }
+    .premier .label:nth-child(3){
+        top: 105%;
+        left: 7%;
+        width:28%;
+    }
+    .premier .label:nth-child(4){
+        top: 105%;
+        left: 49%;
+        width:28%;
+    }
    
 }
 
@@ -1236,6 +1273,13 @@ footer .container_footer .sous_container_footer2 ul a .phone2:hover{
         display: flex;
         flex-direction: column;
         padding-left: 7vw;
+    }
+
+    /* bando bio */
+    .premier {
+        height: 60vh;
+        padding: 8vh 2vw 0vh;
+        margin-bottom: 20vh;
     }
 
     .slider {
@@ -1329,22 +1373,30 @@ footer .container_footer .sous_container_footer2 ul a .phone2:hover{
         height:6vh;
         padding-right: 28vw;
     }
-    .premier .bando .projets{
-        font-size:2rem;
-        padding: 1vh;
+    .premier .label{
+        transform: rotate(270deg);
     }
-    .premier label:nth-child(1){
-        display:none;
+    .premier .label:nth-child(5){
+        top: 94%;
+        left: 65%;
+        width:35%;
     }
-    .premier label:nth-child(2){
-        display:none;
+    .premier .label:nth-child(2){
+        top: 94%;
+        left: 22%;
+        width:35%;
     }
-    .premier label:nth-child(3){
-        display:none;
+    .premier .label:nth-child(3){
+        top: 94%;
+        left: 1%;
+        width:35%;
     }
-    .premier label:nth-child(4){
-        display:none;
+    .premier .label:nth-child(4){
+        top: 94%;
+        left: 43%;
+        width:35%;
     }
+   
 
     /* le slider */
 
