@@ -1,0 +1,31 @@
+
+/* edition de la class créé en JS  */
+.cercle{ 
+    position: absolute; 
+    border-radius:500px; 
+    animation:animation 100s;
+    transition: .5s;
+    box-shadow: 2px 35px 85px -8px rgba(42, 42, 42, 0.582);
+    
+}
+
+/* creation de l'animation pour HUE_ROTATE */
+@keyframes animation {
+    0%{
+       
+        transform:rotate(0deg);
+        opacity:0;
+        
+    }
+    10%{
+        opacity:1;
+    }
+    50%{
+        opacity:1;
+    }
+    100% {
+        top: -100%;
+        transform:rotate(1200deg);
+        opacity:0;
+    }
+}

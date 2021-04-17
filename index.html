@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="./CSS/style.css">
       <link rel="stylesheet" href="./CSS/scroll.css">
       <link rel="stylesheet" href="./CSS/bounce.css">
+      <link rel="stylesheet" href="./CSS/style_boule.css">
       <!-- <link rel="stylesheet" href="../CSS/teste.css"> -->
 
       <!-- ---------- -->
@@ -24,10 +25,6 @@
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
        <!-- ne pas oublier -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
-      <!-- <script src="../SCRIPT/scroll.js"></script> -->
-      <script src="./SCRIPT/mini_bar_nav.js"></script>
-      <script src="./SCRIPT/scroll.js"></script>
-      <script src="./SCRIPT/script_html.js"></script>
       <!-- pour empécher le navigateur de rafraichir la page à la derneir ancre utiliser  -->
       <script>window.onbeforeunload = function () { window.scrollTo(0, 0); }</script>
 
@@ -43,19 +40,17 @@
       <!-- --------- -->
       <!-- LES ICONS -->
       <!-- --------- -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+      <link href=https://fonts.googleapis.com/icon?family=Material+Icons rel="stylesheet">
 
       <title>portfolio</title>
   </head>
-
-
   <body>
 
       <!-- HEADER -->   <!-- TITRE -->
       <!-- BARRE DE MENU -->
     <header id="banner" >
       <div class="container_de_la_nav" id="header">
-        <nav class="mouvement" data-tilt data-tilt-max="18" data-tilt-speed="200"data-tilt-perspective="3000">
+        <nav class="mouvement" data-tilt data-tilt-max="18" data-tilt-speed="200" data-tilt-perspective="3000">
           <img src="./IMG/moi1.png" alt="logo de moi">
           <div class="container_nav" >
             <div class="titre_principale">
@@ -75,7 +70,6 @@
 
       <!-- --------- -->
       <!---  MAIN   --->
-      <!--BOULLE DECO--> 
       <!-- --------- -->
 
     <main id="content" >
@@ -87,7 +81,7 @@
       <div class="cercle6"></div> -->
       
       
-      <div id="ma_bio"class="container_de_ma_bio">
+      <div id="ma_bio" class="container_de_ma_bio">
 
         <!-- -------------------------- -->
         <!--  MINI BAR DE NAV LATERALE  -->
@@ -120,12 +114,7 @@
             <li>
               <a href="#footer"><img src="./IMG/icon/bottom.png" alt="logo bottom"></a>
             </li>
-        </div>
-        <!-- -------------- -->
-         <!-- BOULLE DECO--> 
-        <div class="container_boulle1">
-          <div class="boulle_bio1"></div>
-          <div class="boulle_bio2"></div>
+          </ul>
         </div>
         <!-- -------------- -->
         <div class="bando_ma_bio">
@@ -152,20 +141,20 @@
       <!--TYPE CAROUSELLE   --> 
       <!-- ---------------- -->
       
-      <div id="projets"class="premier">
+      <div id="projets" class="premier">
         <div class="bando">
           <span class="projets">LES PROJETS</span>
         </div>
-        <label class="label"for="slide1"><img src="./IMG/moi3.png" alt="logo de moi">
+        <label class="label" for="slide1"><img src="./IMG/moi3.png" alt="logo de moi">
           <p>projet DDOS cliqué sur l'image</p><img src="./IMG/right-arrow.png" alt="">
         </label>
-        <label class="label"for="slide2"><img src="./IMG/moi4.png" alt="">
+        <label class="label" for="slide2"><img src="./IMG/moi4.png" alt="">
           <p>projet SPAM cliqué sur l'image</p><img src="./IMG/right-arrow.png" alt="">
         </label> 
-        <label class="label"for="slide3"><img src="./IMG/moi5.png" alt="">
+        <label class="label" for="slide3"><img src="./IMG/moi5.png" alt="">
           <p>projet POTFOLIO cliqué sur l'image</p><img src="./IMG/right-arrow.png" alt="">
         </label>
-        <label class="label"for="slide4"><img src="./IMG/moi6.png" alt="">
+        <label class="label" for="slide4"><img src="./IMG/moi6.png" alt="">
           <p>projet HACKATON cliqué sur l'image</p><img src="./IMG/right-arrow.png" alt="">
         </label>
         <ul class="slider">
@@ -192,29 +181,20 @@
           </li>
           <li>
             <a href="https://github.com/hevarn/spam-mail-.git" target="_blank">
-              <input type="radio" id="slide2" name="slide" checked>
+              <input type="radio" id="slide4" name="slide" checked>
               <label for="slide2"></label>
               <img  src="./IMG/portfolio.png" alt="image de code informatique">
             </a>
           </li>
         </ul>
-        <!-- -------------- -->
-        <div class="container_boulle">
-          <div class="boulle_bio"></div>
-        </div>
       </div>
-
+        <!-- -------------- -->
       <!-- -------------------- -->
       <!-- DEUXIEME BLOCK + ------>
-      <!---- BOULLE DECO + -------> 
       <!--  BLOCK TEXTE EN HTML -->
 
 
       <div id="cv" class="deuxieme">
-         <!-- BOULLE DECO--> 
-        <!-- <div class="container_boulle2">
-          <div class="boulle_bio1"></div>  
-        </div> -->
         <!-- AVATAR--> 
         <div class="avatar">
             <img src="./IMG/moi.png" alt="logo de moi ">
@@ -228,7 +208,7 @@
             <p>&nbsp; &nbsp;&nbsp;</p>
             <p>&nbsp;1...<span class="symbole">{</span></p>
                 <!-- MOI -->
-            <p>&nbsp;2...<span class="balise">name<span class="symbole">:</span><span class="contenue"> "Ehoarn MODERNI"</span><span class="symbole">;</span></p>
+            <p>&nbsp;2...<span class="balise">name</span><span class="symbole">:</span><span class="contenue"> "Ehoarn MODERNI"</span><span class="symbole">;</span></p>
             <p>&nbsp;3....<span class="balise">job</span><span class="symbole">:</span><span class="contenue"> "junior Développeur Front-end, Back-end</span><span class="symbole">;</span></p>
             <p>&nbsp;4...<span class="symbole">}</span></p>
             <p>&nbsp;5&nbsp; &nbsp;&nbsp;</p>
@@ -264,7 +244,7 @@
             <p>&nbsp;31....<span class="balise">back skills</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"PHP" / "MYSQL"/ </span><span class="crocher">]</span><span class="symbole"></span><span class="symbole">;</span> </p>
             <!-- COMPETENCES  -->
             <p>&nbsp;32....<span class="balise">framework skills</span><span class="symbole">:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"BOOSTRAP"</span><span class="crocher">]</span><span class="symbole">;</span> </p>
-            <p>&nbsp;33....<span class="balise">cms skills</span><span class="symbole":></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"WORDPRESS"</span><span class="crocher">]</span><span class="symbole">;</span> </p>
+            <p>&nbsp;33....<span class="balise">cms skills</span><span class="symbole" :></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crocher">[</span><span class="contenue">"WORDPRESS"</span><span class="crocher">]</span><span class="symbole">;</span> </p>
             <!-- DEVELOPPEMENT -->
             <p>&nbsp;34....<span class="balise">developpement skills</span><span class="symbole">:</span> &nbsp; <span class="crocher">[</span><span class="contenue">"PYTHON" / "JS"</span><span class="crocher">]</span><span class="symbole">; </span></p>
             <p>&nbsp;35..<span class="symbole">}</span></p>
@@ -316,12 +296,7 @@
 
           </div>          
         </div>
-        <!-- -------------- -->
-        <!-- BOULLE DECO--> 
-        <div class="container_boulle3">
-          <div class="boulle_bio2"></div>
-          <div class="boulle_bio4"></div>
-        </div>
+        <!-- -------------- -->       
         <!--BANDO--> 
         <span class="contact" id="section03">CONTACT </span>   
       </div>
@@ -342,7 +317,7 @@
               </p>
             </div>
             <div class="emoji">
-              <img src="./IMG/moi2.png" alt="emoji de moi">
+              <img src="./IMG/moi7.png" alt="emoji de moi">
             </div>
           </div>
           <div class="sous_container_footer2">
@@ -353,32 +328,32 @@
               <p> LIENS</p>
               <ul>
                 <li>
-                  <img class="insta1"src="./IMG/instagram-2.svg" alt="logo reseaux sociaux">
-                  <a href="https://www.instagram.com/he_varne/"target="_blank">
-                    <img class="insta2"src="./IMG/instagram.svg" alt="logo reseaux sociaux">
+                  <img class="insta1" src="./IMG/instagram-2.svg" alt="logo reseaux sociaux">
+                  <a href="https://www.instagram.com/he_varne/" target="_blank">
+                    <img class="insta2" src="./IMG/instagram.svg" alt="logo reseaux sociaux">
                   </a>
                 </li>
                 <li>
                   <img class='linkd1' src="./IMG/linkedin.svg" alt="logo reseaux sociaux">
-                  <a href="https://www.linkedin.com/in/ehoarn-moderni-a18069206/"target="_blank">
+                  <a href="https://www.linkedin.com/in/ehoarn-moderni-a18069206/" target="_blank">
                     <img class='linkd2' src="./IMG/linkedin-2.svg" alt="logo reseaux sociaux">
                   </a>
                 </li>
                 <li>
                   <img class="git1" src="./IMG/github.svg" alt="logo reseaux sociaux">
-                  <a href="https://github.com/hevarn"target="_blank">
+                  <a href="https://github.com/hevarn" target="_blank">
                     <img class="git2" src="./IMG/github-2.svg" alt="logo reseaux sociaux">
                   </a>
                 </li>
                 <li>
                   <img class="mail1" src="./IMG/mail.svg" alt="logo reseaux sociaux">
-                  <a href="mailto:nunzio.moderni@gmail.com"target="_blank">
+                  <a href="mailto:nunzio.moderni@gmail.com" target="_blank">
                     <img class="mail2" src="./IMG/gmail.svg" alt="logo reseaux sociaux">
                     </a>
                 </li>
                 <li>
                   <img class="phone1" src="./IMG/phone-call.svg" alt="logo reseaux sociaux">
-                  <a href="tel:+3365115248"target="_blank">
+                  <a href="tel:+3365115248" target="_blank">
                     <img class="phone2" src="./IMG/telephone.svg" alt="logo reseaux sociaux">
                     </a>
                 </li>
@@ -386,7 +361,7 @@
             </div>
           </div>
         </div>
-       
+       .
       </footer> 
       
       <!-- ----------- -->
@@ -402,7 +377,7 @@
       <script type="text/javascript" src="./SCRIPT/vanilla-tilt.js"></script>
       <!-- <script src="./SCRIPT/hover_cursor.js"></script> -->
       <!-- permé le scroll du swiper  -->
-      <script>
+      <!--<script>
         var swiper = document.querySelector('.blog-slider', {
           spaceBetween: 30,
           effect: 'fade',
@@ -416,9 +391,14 @@
             clickable: true,
           }
         });
-      </script>
+      </script> -->
+      <!-- <script src="../SCRIPT/scroll.js"></script> -->
+      <script src="./SCRIPT/mini_bar_nav.js"></script>
+      <script src="./SCRIPT/scroll.js"></script>
+      <script src="./SCRIPT/script_html.js"></script>
+      <script src="./SCRIPT/script_boule.js"></script>
       <script>
-      if (typeof bodymovin == 'undefined') {
+        if (typeof bodymovin == 'undefined') {
           document.write(unescape("%3Cscript src='bodymovin-0ad83d672f.js' type='text/javascript'%3E%3C/script%3E"));
       }
       </script>
@@ -436,7 +416,7 @@
         }
         $(document).ready(function(){
           $(window).scroll(function() {
-            EasyPeasyParallax();
+            new EasyPeasyParallax();
           });
         });
       </script>
